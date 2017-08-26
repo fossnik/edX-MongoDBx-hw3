@@ -5,7 +5,7 @@ var _ = require('underscore');
 // and use Config.openExchangeRatesKey instead of an environment variable.
 module.exports = function(Config) {
   var url = 'http://openexchangerates.org/api/latest.json?app_id=' +
-    Config.OPEN_EXCHANGE_RATES_KEY;
+    Config.openExchangeRatesKey;
   var rates = {
     USD: 1,
     EUR: 1.1,
